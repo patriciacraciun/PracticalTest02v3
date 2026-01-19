@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView android:text="SERVER" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:id="@+id/server_port_edit_text" android:hint="Port (ex: 5000)" android:inputType="number" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/connect_button" android:text="Start Server" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View android:background="#000" android:layout_height="2dp" android:layout_width="match_parent" android:layout_margin="10dp"/>
+
+    <TextView android:text="CLIENT" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:id="@+id/client_address_edit_text" android:text="localhost" android:hint="Adresa" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+        <EditText android:id="@+id/client_port_edit_text" android:hint="Port" android:inputType="number" android:layout_weight="1" android:layout_width="0dp" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <EditText android:id="@+id/word_text" android:hint="Cuvant (in engleza)" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+
+    <Button android:id="@+id/get_definition_button" android:text="Definitie" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <TextView android:id="@+id/definition_text_view" android:text="..." android:textSize="16sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+
+</LinearLayout>

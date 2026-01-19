@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId = "ro.pub.cs.systems.pdsd.practicaltest02v3"
-        minSdk = 36
+        minSdk = 34
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -40,4 +40,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation(libs.httpclient)
+    implementation(libs.jsoup)
+    implementation("com.google.android.gms:play-services-maps:18.1.0")
+    implementation("com.google.android.material:material:1.10.0")
+
 }

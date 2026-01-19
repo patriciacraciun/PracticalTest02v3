@@ -7,6 +7,9 @@ appcompat = "1.7.1"
 material = "1.13.0"
 activity = "1.12.2"
 constraintlayout = "2.2.1"
+httpclient = "4.4.1.2"
+jsoup = "1.13.1"
+
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -16,7 +19,9 @@ appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "a
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+httpclient = { group = "cz.msebera.android", name = "httpclient", version.ref = "httpclient" }
+jsoup = { group = "org.jsoup", name = "jsoup", version.ref = "jsoup" }
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
-
